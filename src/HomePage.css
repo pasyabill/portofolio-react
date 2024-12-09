@@ -1,0 +1,70 @@
+/* Container Styling */
+.home-container {
+    background-color: #f8bbd0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Title Styling with Fade-in Animation */
+  .home-title {
+    font-family: 'Mulish', sans-serif;
+    color: #880e4f;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Subheading Styling with Fade-in Animation */
+  .home-subtitle {
+    font-size: 1.2rem;
+    color: #ad1457;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+  
+  /* Description Styling with Fade-in Animation */
+  .home-description {
+    font-size: 1rem;
+    color: #6a1b9a;
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.8rem;
+    max-width: 600px;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  /* Image Styling with Animation */
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #880e4f;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Image Zoom Effect */
+  .profile-img.zoomed {
+    transform: scale(1.8);
+    border-color: #ad1457;
+  }
+  
+  /* Keyframes for Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }  
